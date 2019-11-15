@@ -26,4 +26,7 @@ cd /var/www/html
 git clone https://github.com/josejuansanchez/iaw-practica-lamp.git
 chown www-data:www-data * -R
 
+# configurar el archivo config.php
+cd /var/www/html/iaw-practica-lamp/src/
+sed -i "s/localhost/54.85.90.14/" config.php
 
